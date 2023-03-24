@@ -1,0 +1,67 @@
+var _g, _g2, _g3, _g4, _g5, _g6, _g7, _g8, _g9, _g10, _g11, _g12, _g13, _g14, _g15;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgPokerChip(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    id: "Capa_1",
+    xmlns: "http://www.w3.org/2000/svg",
+    xmlnsXlink: "http://www.w3.org/1999/xlink",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 56 56",
+    style: {
+      enableBackground: "new 0 0 56 56"
+    },
+    xmlSpace: "preserve",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, /*#__PURE__*/React.createElement("g", null, /*#__PURE__*/React.createElement("circle", {
+    style: {
+      fill: "#E64C3C"
+    },
+    cx: 28,
+    cy: 28,
+    r: 28
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#3D324C"
+    },
+    d: "M28,14c2.465,0,4.818,0.47,7,1.289V0.882C32.763,0.306,30.417,0,28,0s-4.763,0.306-7,0.882v14.407 C23.182,14.47,25.535,14,28,14z"
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#3D324C"
+    },
+    d: "M28,42c-2.465,0-4.818-0.47-7-1.289v14.407C23.237,55.694,25.583,56,28,56s4.763-0.306,7-0.882 V40.711C32.818,41.53,30.465,42,28,42z"
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#3D324C"
+    },
+    d: "M42,28c0,2.465-0.47,4.818-1.289,7h14.407C55.694,32.763,56,30.417,56,28s-0.306-4.763-0.882-7 H40.711C41.53,23.182,42,25.535,42,28z"
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#3D324C"
+    },
+    d: "M14,28c0-2.465,0.47-4.818,1.289-7H0.882C0.306,23.237,0,25.583,0,28c0,2.417,0.306,4.763,0.882,7 h14.407C14.47,32.818,14,30.465,14,28z"
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#C03A2B"
+    },
+    d: "M28,49C16.42,49,7,39.58,7,28S16.42,7,28,7s21,9.42,21,21S39.58,49,28,49z"
+  }), /*#__PURE__*/React.createElement("path", {
+    style: {
+      fill: "#F0C419"
+    },
+    d: "M31.109,25.011c0.244-0.517,0.391-1.089,0.391-1.698c0-2.209-1.791-4-4-4s-4,1.791-4,4 c0,0.61,0.147,1.181,0.391,1.698C21.734,25.07,20,26.828,20,29c0,2.209,1.791,4,4,4c0.968,0,1.843-0.358,2.535-0.929 c-0.009,0.796-0.157,2.114-0.976,3.045c-0.662,0.753-1.691,1.135-3.059,1.135c-0.553,0-1,0.447-1,1s0.447,1,1,1 c1.975,0,3.513-0.614,4.571-1.826c1.206-1.38,1.445-3.184,1.464-4.295C29.217,32.666,30.065,33,31,33c2.209,0,4-1.791,4-4 C35,26.828,33.266,25.07,31.109,25.011z"
+  })), _g || (_g = /*#__PURE__*/React.createElement("g", null)), _g2 || (_g2 = /*#__PURE__*/React.createElement("g", null)), _g3 || (_g3 = /*#__PURE__*/React.createElement("g", null)), _g4 || (_g4 = /*#__PURE__*/React.createElement("g", null)), _g5 || (_g5 = /*#__PURE__*/React.createElement("g", null)), _g6 || (_g6 = /*#__PURE__*/React.createElement("g", null)), _g7 || (_g7 = /*#__PURE__*/React.createElement("g", null)), _g8 || (_g8 = /*#__PURE__*/React.createElement("g", null)), _g9 || (_g9 = /*#__PURE__*/React.createElement("g", null)), _g10 || (_g10 = /*#__PURE__*/React.createElement("g", null)), _g11 || (_g11 = /*#__PURE__*/React.createElement("g", null)), _g12 || (_g12 = /*#__PURE__*/React.createElement("g", null)), _g13 || (_g13 = /*#__PURE__*/React.createElement("g", null)), _g14 || (_g14 = /*#__PURE__*/React.createElement("g", null)), _g15 || (_g15 = /*#__PURE__*/React.createElement("g", null)));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgPokerChip);
+export default __webpack_public_path__ + "static/media/poker-chip.02c2ad2b0c6143406773e89c13b64feb.svg";
+export { ForwardRef as ReactComponent };

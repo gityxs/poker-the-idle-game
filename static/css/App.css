@@ -1,0 +1,181 @@
+body {
+  background-color: rgb(24, 24, 27);
+  overflow: hidden;
+}
+
+.special-card {
+  filter: invert(100%) drop-shadow(0px 0px 9.9px purple);
+  fill: green;
+  
+}
+
+.link {
+  @apply text-purple-700 underline decoration-2 decoration-purple-700;
+}
+
+.modal {
+  @apply bg-white text-zinc-900 drop-shadow-2xl absolute top-0 left-0 right-0 z-20 rounded-3xl mx-auto w-1/3 h-fit p-8 text-xl font-bold;
+}
+
+.btn {
+  @apply bg-white text-zinc-900 rounded-full font-bold scale-100 hover:scale-110 active:scale-90;
+  transition: 0.1s ease-in-out;
+}
+
+.btn-purple {
+  @apply bg-purple-700 text-white rounded-full font-bold scale-100 hover:scale-110 active:scale-90;
+  transition: 0.1s ease-in-out;
+}
+
+
+.btn-disabled {
+  @apply opacity-50 hover:scale-100 active:scale-100;
+  transition: 0.1s ease-in-out;
+}
+
+.side-btn {
+  @apply bg-white text-zinc-900 font-bold scale-100 px-10 py-5 fixed z-10 ease-in-out duration-100;
+  transition: 0.1s ease-in-out;
+}
+
+.side-card {
+  @apply overflow-y-scroll top-28 p-8 z-20 transition-transform ease-in-out flex flex-col gap-7 drop-shadow-2xl;
+}
+
+.splide:not( .is-overflow ) .splide__list {
+  justify-content: center;
+}
+
+@keyframes enterModal {
+  from {
+    transform: translateY(0);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(100px);
+    opacity: 100%;
+  }
+}
+
+.enterModal {
+  animation: enterModal 500ms ease-in-out forwards;
+}
+
+@keyframes exitModal {
+  from {
+    transform: translateY(100px);
+    opacity: 100%;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 0%;
+  }
+}
+
+.exitModal {
+  animation: exitModal 500ms ease-in-out forwards;
+}
+
+@keyframes goToFullWidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.goToFullWidth {
+  width: 0%;
+  animation: goToFullWidth 5s linear forwards;
+}
+
+@keyframes cardEntry {
+  from {
+    transform: translateY(-100px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.cardEntry {
+  transform: translateY(-100px);
+  opacity: 0%;
+  animation-name: cardEntry;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes pop-big {
+  0% {
+    transform: scale(0.0);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes pop-huge {
+  0% {
+    transform: scale(0.0) rotate(0deg);
+  }
+  70% {
+    transform: scale(2) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(360deg);
+  }
+}
+
+.pop {
+  transform: scale(0.0);
+  animation: pop 0.3s ease-in-out forwards;
+}
+
+.pop-big {
+  transform: scale(0.0);
+  animation: pop-big 0.5s ease-in-out forwards;
+}
+
+.pop-huge {
+  transform: scale(0.0);
+  animation: pop-huge 0.5s ease-in-out forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out forwards;
+}
